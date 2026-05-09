@@ -1,0 +1,438 @@
+{
+  "sleepLogs": [
+    {
+      "id": "sleep_04lrx40t",
+      "start": "2026-05-09T16:36:50.096Z",
+      "end": "2026-05-09T17:36:50.096Z",
+      "kind": "main",
+      "source": "manual",
+      "notes": "QA manual entry",
+      "createdAt": "2026-05-09T18:36:50.328Z",
+      "updatedAt": "2026-05-09T18:36:50.328Z",
+      "segments": [
+        {
+          "id": "segment_5b0mfyjr",
+          "start": "2026-05-09T16:36:50.096Z",
+          "end": "2026-05-09T17:36:50.096Z"
+        }
+      ]
+    },
+    {
+      "id": "sleep_s719nx9w",
+      "start": "2026-05-09T14:20:00.000Z",
+      "end": "2026-05-09T14:45:00.000Z",
+      "source": "nap_timer",
+      "kind": "nap",
+      "notes": "Recovery nap",
+      "createdAt": "2026-05-09T14:45:00.000Z",
+      "updatedAt": "2026-05-09T14:45:00.000Z",
+      "segments": [
+        {
+          "id": "segment_qzgbdtzv",
+          "start": "2026-05-09T14:20:00.000Z",
+          "end": "2026-05-09T14:45:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "sleep_3qixgpho",
+      "start": "2026-05-09T10:01:49.575Z",
+      "end": "2026-05-09T17:46:49.575Z",
+      "kind": "main",
+      "source": "healthkit",
+      "notes": "Sample Apple Health import",
+      "createdAt": "2026-05-09T18:36:49.575Z",
+      "updatedAt": "2026-05-09T18:36:49.575Z",
+      "segments": [
+        {
+          "id": "segment_t0pe1fkk",
+          "start": "2026-05-09T10:01:49.575Z",
+          "end": "2026-05-09T13:31:49.575Z"
+        },
+        {
+          "id": "segment_lw7r0obt",
+          "start": "2026-05-09T13:56:49.575Z",
+          "end": "2026-05-09T17:46:49.575Z"
+        }
+      ]
+    },
+    {
+      "id": "sleep_qh92tlt9",
+      "start": "2026-05-09T06:35:00.000Z",
+      "end": "2026-05-09T13:30:00.000Z",
+      "source": "healthkit",
+      "kind": "main",
+      "createdAt": "2026-05-09T13:30:00.000Z",
+      "updatedAt": "2026-05-09T13:30:00.000Z",
+      "segments": [
+        {
+          "id": "segment_wttz8879",
+          "start": "2026-05-09T06:35:00.000Z",
+          "end": "2026-05-09T13:30:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "sleep_hh1as7e9",
+      "start": "2026-05-08T07:00:00.000Z",
+      "end": "2026-05-08T14:20:00.000Z",
+      "source": "healthkit",
+      "kind": "main",
+      "createdAt": "2026-05-08T14:20:00.000Z",
+      "updatedAt": "2026-05-08T14:20:00.000Z",
+      "segments": [
+        {
+          "id": "segment_6silo7q8",
+          "start": "2026-05-08T07:00:00.000Z",
+          "end": "2026-05-08T14:20:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "sleep_m6wavibk",
+      "start": "2026-05-07T07:25:00.000Z",
+      "end": "2026-05-07T15:10:00.000Z",
+      "source": "healthkit",
+      "kind": "main",
+      "notes": "Interrupted by early meeting.",
+      "createdAt": "2026-05-07T15:10:00.000Z",
+      "updatedAt": "2026-05-07T15:10:00.000Z",
+      "segments": [
+        {
+          "id": "segment_co9bcdfp",
+          "start": "2026-05-07T07:25:00.000Z",
+          "end": "2026-05-07T10:25:00.000Z"
+        },
+        {
+          "id": "segment_euvtbewz",
+          "start": "2026-05-07T10:40:00.000Z",
+          "end": "2026-05-07T13:05:00.000Z"
+        },
+        {
+          "id": "segment_g04vlsls",
+          "start": "2026-05-07T13:20:00.000Z",
+          "end": "2026-05-07T14:40:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "sleep_vxiv587p",
+      "start": "2026-05-06T14:20:00.000Z",
+      "end": "2026-05-06T14:45:00.000Z",
+      "source": "nap_timer",
+      "kind": "nap",
+      "notes": "Recovery nap",
+      "createdAt": "2026-05-06T14:45:00.000Z",
+      "updatedAt": "2026-05-06T14:45:00.000Z",
+      "segments": [
+        {
+          "id": "segment_yuhbxr3r",
+          "start": "2026-05-06T14:20:00.000Z",
+          "end": "2026-05-06T14:45:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "sleep_bdghkq1d",
+      "start": "2026-05-06T06:35:00.000Z",
+      "end": "2026-05-06T13:05:00.000Z",
+      "source": "manual",
+      "kind": "main",
+      "createdAt": "2026-05-06T13:05:00.000Z",
+      "updatedAt": "2026-05-06T13:05:00.000Z",
+      "segments": [
+        {
+          "id": "segment_iz9z1rix",
+          "start": "2026-05-06T06:35:00.000Z",
+          "end": "2026-05-06T13:05:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "sleep_5nxgb69w",
+      "start": "2026-05-05T07:00:00.000Z",
+      "end": "2026-05-05T13:55:00.000Z",
+      "source": "manual",
+      "kind": "main",
+      "createdAt": "2026-05-05T13:55:00.000Z",
+      "updatedAt": "2026-05-05T13:55:00.000Z",
+      "segments": [
+        {
+          "id": "segment_tb8103z8",
+          "start": "2026-05-05T07:00:00.000Z",
+          "end": "2026-05-05T13:55:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "sleep_q32vpov0",
+      "start": "2026-05-04T07:25:00.000Z",
+      "end": "2026-05-04T14:45:00.000Z",
+      "source": "manual",
+      "kind": "main",
+      "createdAt": "2026-05-04T14:45:00.000Z",
+      "updatedAt": "2026-05-04T14:45:00.000Z",
+      "segments": [
+        {
+          "id": "segment_q6f87umu",
+          "start": "2026-05-04T07:25:00.000Z",
+          "end": "2026-05-04T14:45:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "sleep_jpnvsned",
+      "start": "2026-05-03T14:20:00.000Z",
+      "end": "2026-05-03T14:45:00.000Z",
+      "source": "nap_timer",
+      "kind": "nap",
+      "notes": "Recovery nap",
+      "createdAt": "2026-05-03T14:45:00.000Z",
+      "updatedAt": "2026-05-03T14:45:00.000Z",
+      "segments": [
+        {
+          "id": "segment_ffvar5eh",
+          "start": "2026-05-03T14:20:00.000Z",
+          "end": "2026-05-03T14:45:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "sleep_o85umfal",
+      "start": "2026-05-03T06:35:00.000Z",
+      "end": "2026-05-03T14:20:00.000Z",
+      "source": "manual",
+      "kind": "main",
+      "createdAt": "2026-05-03T14:20:00.000Z",
+      "updatedAt": "2026-05-03T14:20:00.000Z",
+      "segments": [
+        {
+          "id": "segment_veb7s3fu",
+          "start": "2026-05-03T06:35:00.000Z",
+          "end": "2026-05-03T14:20:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "sleep_kujn6fev",
+      "start": "2026-05-02T07:00:00.000Z",
+      "end": "2026-05-02T13:30:00.000Z",
+      "source": "manual",
+      "kind": "main",
+      "createdAt": "2026-05-02T13:30:00.000Z",
+      "updatedAt": "2026-05-02T13:30:00.000Z",
+      "segments": [
+        {
+          "id": "segment_gcaonarj",
+          "start": "2026-05-02T07:00:00.000Z",
+          "end": "2026-05-02T13:30:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "sleep_efl0x92j",
+      "start": "2026-05-01T07:25:00.000Z",
+      "end": "2026-05-01T14:20:00.000Z",
+      "source": "manual",
+      "kind": "main",
+      "createdAt": "2026-05-01T14:20:00.000Z",
+      "updatedAt": "2026-05-01T14:20:00.000Z",
+      "segments": [
+        {
+          "id": "segment_uhd6ampn",
+          "start": "2026-05-01T07:25:00.000Z",
+          "end": "2026-05-01T14:20:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "sleep_4zwq610m",
+      "start": "2026-04-30T14:20:00.000Z",
+      "end": "2026-04-30T14:45:00.000Z",
+      "source": "nap_timer",
+      "kind": "nap",
+      "notes": "Recovery nap",
+      "createdAt": "2026-04-30T14:45:00.000Z",
+      "updatedAt": "2026-04-30T14:45:00.000Z",
+      "segments": [
+        {
+          "id": "segment_hrnqb4ys",
+          "start": "2026-04-30T14:20:00.000Z",
+          "end": "2026-04-30T14:45:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "sleep_oqjxo0zt",
+      "start": "2026-04-30T06:35:00.000Z",
+      "end": "2026-04-30T13:55:00.000Z",
+      "source": "manual",
+      "kind": "main",
+      "createdAt": "2026-04-30T13:55:00.000Z",
+      "updatedAt": "2026-04-30T13:55:00.000Z",
+      "segments": [
+        {
+          "id": "segment_bbbpdulv",
+          "start": "2026-04-30T06:35:00.000Z",
+          "end": "2026-04-30T13:55:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "sleep_z19wocqk",
+      "start": "2026-04-29T07:00:00.000Z",
+      "end": "2026-04-29T14:45:00.000Z",
+      "source": "manual",
+      "kind": "main",
+      "createdAt": "2026-04-29T14:45:00.000Z",
+      "updatedAt": "2026-04-29T14:45:00.000Z",
+      "segments": [
+        {
+          "id": "segment_ypb32yz0",
+          "start": "2026-04-29T07:00:00.000Z",
+          "end": "2026-04-29T14:45:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "sleep_hnixy2y2",
+      "start": "2026-04-28T07:25:00.000Z",
+      "end": "2026-04-28T13:55:00.000Z",
+      "source": "manual",
+      "kind": "main",
+      "createdAt": "2026-04-28T13:55:00.000Z",
+      "updatedAt": "2026-04-28T13:55:00.000Z",
+      "segments": [
+        {
+          "id": "segment_dwhlgpd0",
+          "start": "2026-04-28T07:25:00.000Z",
+          "end": "2026-04-28T13:55:00.000Z"
+        }
+      ]
+    }
+  ],
+  "settings": {
+    "targetMinutes": 450,
+    "anchorStartMinutes": 480,
+    "anchorEndMinutes": 900,
+    "bedtimeReminderEnabled": true,
+    "bedtimeReminderLeadMinutes": 30,
+    "notificationsEnabled": false,
+    "reminderLabel": "Prep for sleep"
+  },
+  "onboarding": {
+    "completed": true,
+    "healthImportExplained": true,
+    "notificationPromptSeen": false,
+    "snorePromptSeen": true
+  },
+  "permissions": {
+    "healthKit": "granted",
+    "notifications": "granted",
+    "microphone": "granted"
+  },
+  "napTimer": {
+    "active": false,
+    "presetMinutes": 30,
+    "startedAt": "2026-05-09T18:36:49.942Z",
+    "endsAt": "2026-05-09T19:06:49.942Z",
+    "completedAt": "2026-05-09T19:06:49.942Z"
+  },
+  "napHistory": [
+    {
+      "id": "nap_history_034e0oxh",
+      "presetMinutes": 30,
+      "startedAt": "2026-05-09T18:36:49.942Z",
+      "endedAt": "2026-05-09T19:06:49.942Z",
+      "savedLogId": "sleep_x8wtyz7e"
+    }
+  ],
+  "snoreSessions": [
+    {
+      "id": "snore_session_tnhfv8nf",
+      "createdAt": "2026-05-09T18:36:50.078Z",
+      "startTime": "2026-05-09T11:11:50.078Z",
+      "durationMinutes": 445,
+      "threshold": 0.7,
+      "mode": "sample",
+      "eventCount": 4,
+      "previewOnly": false,
+      "events": [
+        {
+          "id": "snore_bb0nlxw2",
+          "secondsFromStart": 1840,
+          "level": 0.83,
+          "previewLabel": "00:30:40 clip"
+        },
+        {
+          "id": "snore_gsxba7a3",
+          "secondsFromStart": 5520,
+          "level": 0.7899999999999999,
+          "previewLabel": "01:32:00 clip"
+        },
+        {
+          "id": "snore_si7r17q1",
+          "secondsFromStart": 12330,
+          "level": 0.8799999999999999,
+          "previewLabel": "03:25:30 clip"
+        },
+        {
+          "id": "snore_dtoxv6rc",
+          "secondsFromStart": 18780,
+          "level": 0.8099999999999999,
+          "previewLabel": "05:13:00 clip"
+        }
+      ]
+    },
+    {
+      "id": "snore_session_xbs6qwed",
+      "createdAt": "2026-05-08T18:00:00.000Z",
+      "startTime": "2026-05-08T16:00:00.000Z",
+      "durationMinutes": 440,
+      "threshold": 0.62,
+      "mode": "sample",
+      "eventCount": 4,
+      "previewOnly": true,
+      "events": [
+        {
+          "id": "snore_9hqyb3xd",
+          "secondsFromStart": 1840,
+          "level": 0.75,
+          "previewLabel": "00:30:40 clip"
+        },
+        {
+          "id": "snore_yyxaoann",
+          "secondsFromStart": 5520,
+          "level": 0.71,
+          "previewLabel": "01:32:00 clip"
+        },
+        {
+          "id": "snore_ilicw2pg",
+          "secondsFromStart": 12330,
+          "level": 0.8,
+          "previewLabel": "03:25:30 clip"
+        },
+        {
+          "id": "snore_p40p6wlo",
+          "secondsFromStart": 18780,
+          "level": 0.73,
+          "previewLabel": "05:13:00 clip"
+        }
+      ]
+    }
+  ],
+  "premium": {
+    "unlocked": true,
+    "mode": "fallback",
+    "priceLabel": "$9.99 lifetime",
+    "launchPriceLabel": "$7.99 launch"
+  },
+  "waitlist": [
+    {
+      "id": "lead_0dv3gx96",
+      "email": "qa@example.com",
+      "createdAt": "2026-05-09T18:36:49.447Z",
+      "source": "landing-page"
+    }
+  ]
+}

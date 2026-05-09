@@ -1,0 +1,8 @@
+.git
+.gitignore
+.next
+node_modules
+npm-debug.log
+Dockerfile
+FORGE_COMPLETION_AUDIT.md
+HUMAN_INPUT_NEEDED.md
