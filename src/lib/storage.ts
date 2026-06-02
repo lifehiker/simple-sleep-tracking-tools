@@ -18,8 +18,17 @@ async function ensureStateFile() {
 
 export async function readState(): Promise<AppState> {
   await ensureStateFile();
-  const raw = await readFile(statePath, "utf8");
-  return JSON.parse(raw) as AppState;
+  try {
+    const raw = await readFile(statePath, "utf8");
+    return JSON.parse(raw) as AppState;
+  } catch {
+    // File may be partially written by a concurrent writeState call.
+    // Recover by regenerating seed state rather than letting the throw
+    // escape into streaming SSR (which would produce a 200 with empty body).
+    const seed = createSeedState();
+    await writeFile(statePath, JSON.stringify(seed, null, 2), "utf8").catch(() => {});
+    return seed;
+  }
 }
 
 export async function writeState(state: AppState) {
