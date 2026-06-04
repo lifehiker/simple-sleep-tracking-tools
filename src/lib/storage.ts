@@ -17,12 +17,12 @@ async function ensureStateFile() {
 }
 
 export async function readState(): Promise<AppState> {
-  await ensureStateFile();
   try {
+    await ensureStateFile();
     const raw = await readFile(statePath, "utf8");
     return JSON.parse(raw) as AppState;
   } catch {
-    // File may be partially written by a concurrent writeState call.
+    // ensureStateFile, readFile, or JSON.parse may fail (permissions, partial write, etc.).
     // Recover by regenerating seed state rather than letting the throw
     // escape into streaming SSR (which would produce a 200 with empty body).
     const seed = createSeedState();
