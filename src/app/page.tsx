@@ -2,6 +2,8 @@ import Link from "next/link";
 import { WaitlistForm } from "@/components/waitlist-form";
 import { readState } from "@/lib/storage";
 
+export const dynamic = "force-dynamic";
+
 export default async function HomePage() {
   const state = await readState();
 
