@@ -3,6 +3,7 @@ import { SnoreCheckForm } from "@/components/snore-check-form";
 import { readState } from "@/lib/storage";
 
 export const dynamic = "force-dynamic";
+export const revalidate = 0;
 
 export default async function SnoreCheckPage() {
   const state = await readState();
