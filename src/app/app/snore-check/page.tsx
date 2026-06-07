@@ -7,7 +7,7 @@ export const revalidate = 0;
 
 export default async function SnoreCheckPage() {
   const state = await readState();
-  const latest = state.snoreSessions[0];
+  const latest = state.snoreSessions?.[0];
 
   return (
     <AppShell eyebrow="Snore check" title="Overnight loud-event review with a guarded browser fallback.">
