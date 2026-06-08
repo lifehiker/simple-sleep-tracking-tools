@@ -24,6 +24,9 @@ export async function readState(): Promise<AppState> {
     if (!parsed.settings) {
       parsed.settings = createSeedState().settings;
     }
+    if (!parsed.premium) {
+      parsed.premium = createSeedState().premium;
+    }
     return parsed;
   } catch {
     // ensureStateFile, readFile, or JSON.parse may fail (permissions, partial write, etc.).
