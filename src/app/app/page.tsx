@@ -94,7 +94,7 @@ export default async function DashboardPage() {
                   <p className="text-xl font-bold">{formatMinutes(diffMinutes(log.start, log.end))}</p>
                 </div>
                 {log.notes ? <p className="mt-3 text-sm text-[var(--muted)]">{log.notes}</p> : null}
-                {log.segments.length > 1 ? (
+                {(log.segments?.length ?? 0) > 1 ? (
                   <p className="mt-3 text-xs uppercase tracking-[0.24em] text-[var(--muted)]">
                     Segmented session: {log.segments.length} sleep blocks
                   </p>
