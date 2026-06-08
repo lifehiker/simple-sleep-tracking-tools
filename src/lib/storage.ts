@@ -20,7 +20,11 @@ export async function readState(): Promise<AppState> {
   try {
     await ensureStateFile();
     const raw = await readFile(statePath, "utf8");
-    return JSON.parse(raw) as AppState;
+    const parsed = JSON.parse(raw) as AppState;
+    if (!parsed.settings) {
+      parsed.settings = createSeedState().settings;
+    }
+    return parsed;
   } catch {
     // ensureStateFile, readFile, or JSON.parse may fail (permissions, partial write, etc.).
     // Recover by regenerating seed state rather than letting the throw
