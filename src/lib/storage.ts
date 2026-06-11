@@ -21,15 +21,16 @@ export async function readState(): Promise<AppState> {
     await ensureStateFile();
     const raw = await readFile(statePath, "utf8");
     const parsed = JSON.parse(raw) as AppState;
-    if (!parsed.settings) {
-      parsed.settings = createSeedState().settings;
-    }
-    if (!parsed.premium) {
-      parsed.premium = createSeedState().premium;
-    }
-    if (!parsed.waitlist) {
-      parsed.waitlist = [];
-    }
+    const seed = createSeedState();
+    if (!parsed.sleepLogs) parsed.sleepLogs = seed.sleepLogs;
+    if (!parsed.settings) parsed.settings = seed.settings;
+    if (!parsed.onboarding) parsed.onboarding = seed.onboarding;
+    if (!parsed.permissions) parsed.permissions = seed.permissions;
+    if (!parsed.napTimer) parsed.napTimer = seed.napTimer;
+    if (!parsed.napHistory) parsed.napHistory = seed.napHistory;
+    if (!parsed.snoreSessions) parsed.snoreSessions = seed.snoreSessions;
+    if (!parsed.premium) parsed.premium = seed.premium;
+    if (!parsed.waitlist) parsed.waitlist = [];
     return parsed;
   } catch {
     // ensureStateFile, readFile, or JSON.parse may fail (permissions, partial write, etc.).
