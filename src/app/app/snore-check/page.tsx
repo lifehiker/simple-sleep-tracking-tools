@@ -52,7 +52,7 @@ export default async function SnoreCheckPage() {
       <section className="card p-5">
         <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[var(--accent)]">Event timeline</p>
         <div className="mt-5 grid gap-3">
-          {latest?.events.map((event, index) => (
+          {latest?.events?.map((event, index) => (
             <article key={event.id} className="rounded-[1.5rem] border border-[var(--line)] bg-white p-4">
               <div className="flex flex-wrap items-center justify-between gap-3">
                 <div>
