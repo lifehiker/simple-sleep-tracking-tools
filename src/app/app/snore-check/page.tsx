@@ -31,7 +31,7 @@ export default async function SnoreCheckPage() {
                 <p className="text-sm text-[var(--muted)]">Detected event count</p>
                 <p className="mt-2 text-5xl font-bold tracking-[-0.06em]">{latest.eventCount}</p>
                 <p className="mt-3 text-sm text-[var(--muted)]">
-                  Threshold {latest.threshold.toFixed(2)} · {latest.mode} mode ·{" "}
+                  Threshold {latest.threshold?.toFixed(2)} · {latest.mode} mode ·{" "}
                   {latest.previewOnly ? "preview-only free tier" : "full premium detail"}
                 </p>
               </div>
@@ -60,7 +60,7 @@ export default async function SnoreCheckPage() {
                   <p className="mt-1 text-sm text-[var(--muted)]">{event.previewLabel}</p>
                 </div>
                 <div className="text-right">
-                  <p className="text-lg font-bold">{event.level.toFixed(2)}</p>
+                  <p className="text-lg font-bold">{event.level?.toFixed(2)}</p>
                   <p className="text-xs uppercase tracking-[0.24em] text-[var(--muted)]">peak level</p>
                 </div>
               </div>
