@@ -29,6 +29,7 @@ export async function readState(): Promise<AppState> {
     if (!parsed.permissions) parsed.permissions = seed.permissions;
     else parsed.permissions = { ...seed.permissions, ...parsed.permissions };
     if (!parsed.napTimer) parsed.napTimer = seed.napTimer;
+    else parsed.napTimer = { ...seed.napTimer, ...parsed.napTimer };
     if (!parsed.napHistory) parsed.napHistory = seed.napHistory;
     if (!parsed.snoreSessions) parsed.snoreSessions = seed.snoreSessions;
     if (!parsed.premium) parsed.premium = seed.premium;

@@ -4,6 +4,7 @@ import { readState } from "@/lib/storage";
 import { formatDateTime } from "@/lib/time";
 
 export const dynamic = "force-dynamic";
+export const revalidate = 0;
 
 export default async function NapTimerPage() {
   const state = await readState();
@@ -24,12 +25,12 @@ export default async function NapTimerPage() {
       <section className="card p-5">
         <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[var(--accent)]">Recent nap history</p>
         <div className="mt-5 grid gap-3">
-          {state.napHistory.length ? (
+          {state.napHistory?.length ? (
             state.napHistory.map((item) => (
               <article key={item.id} className="rounded-[1.5rem] border border-[var(--line)] bg-white p-4">
                 <p className="text-sm font-semibold">{item.presetMinutes}-minute preset</p>
                 <p className="mt-2 text-sm text-[var(--muted)]">
-                  {formatDateTime(item.startedAt)} to {formatDateTime(item.endedAt)}
+                  {item.startedAt ? formatDateTime(item.startedAt) : "—"} to {item.endedAt ? formatDateTime(item.endedAt) : "—"}
                 </p>
               </article>
             ))
