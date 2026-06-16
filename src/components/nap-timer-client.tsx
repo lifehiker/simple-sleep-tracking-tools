@@ -24,11 +24,12 @@ export function NapTimerClient({
 }) {
   const router = useRouter();
   const [message, setMessage] = useState<string | null>(null);
-  const [now, setNow] = useState(() => Date.now());
+  const [now, setNow] = useState(0);
   const [isPending, startTransition] = useTransition();
-  const countdown = napTimer.endsAt ? Math.max(0, new Date(napTimer.endsAt).getTime() - now) : 0;
+  const countdown = (now > 0 && napTimer.endsAt) ? Math.max(0, new Date(napTimer.endsAt).getTime() - now) : 0;
 
   useEffect(() => {
+    setNow(Date.now());
     if (!napTimer.active || !napTimer.endsAt) return;
     const timer = setInterval(() => {
       setNow(Date.now());
