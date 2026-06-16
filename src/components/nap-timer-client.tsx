@@ -89,7 +89,7 @@ export function NapTimerClient({
         <p className="mt-4 text-6xl font-bold tracking-[-0.06em]">
           {napTimer.active ? formatCountdown(countdown) : "00:00"}
         </p>
-        <p className="mt-3 text-sm text-[var(--muted)]">
+        <p className="mt-3 text-sm text-[var(--muted)]" suppressHydrationWarning>
           {napTimer.active && napTimer.endsAt
             ? `Ends at ${formatDateTime(napTimer.endsAt)}. Completing the timer saves a nap entry automatically.`
             : "Start from a preset to save a completed nap back into the sleep log."}
