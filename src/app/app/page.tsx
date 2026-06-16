@@ -9,6 +9,7 @@ import { readState } from "@/lib/storage";
 import { diffMinutes, formatDateTime, formatMinutes } from "@/lib/time";
 
 export const dynamic = "force-dynamic";
+export const revalidate = 0;
 
 export default async function DashboardPage() {
   const state = await readState();
