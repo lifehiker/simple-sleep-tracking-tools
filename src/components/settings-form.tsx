@@ -73,11 +73,11 @@ export function SettingsForm({ settings }: { settings: AppState["settings"] }) {
           Preferred sleep window start
           <select
             name="anchorStartMinutes"
-            defaultValue={settings.anchorStartMinutes}
+            defaultValue={String(settings.anchorStartMinutes)}
             className="rounded-2xl border border-[var(--line)] bg-white px-4 py-3"
           >
             {Array.from({ length: 24 }, (_, hour) => hour * 60).map((minutes) => (
-              <option key={minutes} value={minutes}>
+              <option key={minutes} value={String(minutes)}>
                 {formatClock(minutes)}
               </option>
             ))}
@@ -87,11 +87,11 @@ export function SettingsForm({ settings }: { settings: AppState["settings"] }) {
           Preferred sleep window end
           <select
             name="anchorEndMinutes"
-            defaultValue={settings.anchorEndMinutes}
+            defaultValue={String(settings.anchorEndMinutes)}
             className="rounded-2xl border border-[var(--line)] bg-white px-4 py-3"
           >
             {Array.from({ length: 24 }, (_, hour) => hour * 60).map((minutes) => (
-              <option key={minutes} value={minutes}>
+              <option key={minutes} value={String(minutes)}>
                 {formatClock(minutes)}
               </option>
             ))}
